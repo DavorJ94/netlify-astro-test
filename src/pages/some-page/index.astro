@@ -3,7 +3,7 @@ import Layout from "../../layouts/Layout.astro";
 
 const currentDate = new Date();
 
-Astro.response.headers.set("Cache-Control", "public, max-age=60");
+Astro.response.headers.set("Cache-Control", "public, max-age=60, s-max-age=40");
 ---
 
 <Layout title="Welcome to Astro.">
